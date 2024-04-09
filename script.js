@@ -1,24 +1,14 @@
 function calcularMedia() {
-    var conceitos = {
-        "excelente": 9.75,
-        "ótimo": 8.5,
-        "bom": 7.25,
-        "não suficiente": 5.75
-    };
+    // Obter os valores dos conceitos selecionados para cada disciplina
+    let conceito_excelente1 = parseFloat(document.getElementById("conceito_excelente1").value);
+    let conceito_excelente2 = parseFloat(document.getElementById("conceito_excelente2").value);
+    let conceito_excelente3 = parseFloat(document.getElementById("conceito_excelente3").value);
+    let conceito_excelente4 = parseFloat(document.getElementById("conceito_excelente4").value);
+    let conceito_excelente5 = parseFloat(document.getElementById("conceito_excelente5").value);
 
-    var excelente = conceitos[document.getElementById('excelente').value.toLowerCase()] || 0;
-    var otimo = conceitos[document.getElementById('otimo').value.toLowerCase()] || 0;
-    var bom = conceitos[document.getElementById('bom').value.toLowerCase()] || 0;
-    var naoSuficiente = conceitos[document.getElementById('nao_suficiente').value.toLowerCase()] || 0;
+    // Calcular a média das notas
+    let media = (conceito_excelente1 + conceito_excelente2 + conceito_excelente3 + conceito_excelente4 + conceito_excelente5) / 5;
 
-    var totalNotas = excelente + otimo + bom + naoSuficiente;
-    var quantidadeNotas = (excelente ? 1 : 0) + (otimo ? 1 : 0) + (bom ? 1 : 0) + (naoSuficiente ? 1 : 0);
-
-    if (quantidadeNotas === 0) {
-        alert("Por favor, insira pelo menos um conceito válido.");
-        return;
-    }
-
-    var media = totalNotas / quantidadeNotas;
-    document.getElementById('media').innerText = "Média = " + media.toFixed(1);
+    // Exibir a média
+    document.getElementById("media").innerText = "Média das notas: " + media.toFixed(2);
 }
