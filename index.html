@@ -9,22 +9,62 @@
 <body>
     <div class="container">
         <h1>Calculadora de Média de Notas</h1>
+        
         <div>
-            <label for="excelente">Excelente (9.5 até 10):</label>
-            <input type="text" id="excelente">
+            <h2>Disciplina 1</h2>
+            <label for="conceito_excelente1">Excelente:</label>
+            <select id="conceito_excelente1">
+                <option value="10">Excelente (10)</option>
+                <option value="9.5">Ótimo (9.5)</option>
+                <option value="7.25">Bom (7.25)</option>
+                <option value="5.5">Não Suficiente (5.5)</option>
+            </select>
         </div>
+
         <div>
-            <label for="otimo">Ótimo (8 até 9):</label>
-            <input type="text" id="otimo">
+            <h2>Disciplina 2</h2>
+            <label for="conceito_excelente2">Excelente:</label>
+            <select id="conceito_excelente2">
+                <option value="10">Excelente (10)</option>
+                <option value="9.5">Ótimo (9.5)</option>
+                <option value="7.25">Bom (7.25)</option>
+                <option value="5.5">Não Suficiente (5.5)</option>
+            </select>
         </div>
+
         <div>
-            <label for="bom">Bom (7 até 7.5):</label>
-            <input type="text" id="bom">
+            <h2>Disciplina 3</h2>
+            <label for="conceito_excelente3">Excelente:</label>
+            <select id="conceito_excelente3">
+                <option value="10">Excelente (10)</option>
+                <option value="9.5">Ótimo (9.5)</option>
+                <option value="7.25">Bom (7.25)</option>
+                <option value="5.5">Não Suficiente (5.5)</option>
+            </select>
         </div>
+
         <div>
-            <label for="nao_suficiente">Não Suficiente (6 para baixo):</label>
-            <input type="text" id="nao_suficiente">
+            <h2>Disciplina 4</h2>
+            <label for="conceito_excelente4">Excelente:</label>
+            <select id="conceito_excelente4">
+                <option value="10">Excelente (10)</option>
+                <option value="9.5">Ótimo (9.5)</option>
+                <option value="7.25">Bom (7.25)</option>
+                <option value="5.5">Não Suficiente (5.5)</option>
+            </select>
         </div>
+
+        <div>
+            <h2>Disciplina 5</h2>
+            <label for="conceito_excelente5">Excelente:</label>
+            <select id="conceito_excelente5">
+                <option value="10">Excelente (10)</option>
+                <option value="9.5">Ótimo (9.5)</option>
+                <option value="7.25">Bom (7.25)</option>
+                <option value="5.5">Não Suficiente (5.5)</option>
+            </select>
+        </div>
+
         <button onclick="calcularMedia()">Calcular Média</button>
         <p id="media"></p>
     </div>
